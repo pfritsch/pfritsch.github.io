@@ -11,3 +11,7 @@ authors:
 {{site.description}}
 
 <h1>{{ page.title }}</h1>
+
+{% for post in posts %}
+    {{ post.title }}
+{% endfor %}
