@@ -6,15 +6,12 @@ authors:
   - @eToileGraphic
 ---
 
-# {{ site.title }}
-
 {{site.description}}
 
-<h1>{{ page.title }}</h1>
-<<<<<<< HEAD
+<h1>{{ site.title }}</h1>
 
+<ul>
 {% for post in posts %}
-    {{ post.title }}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
-=======
->>>>>>> d299389aa35fcbaef8d465fe5f615e0af504813d
+</ul>
