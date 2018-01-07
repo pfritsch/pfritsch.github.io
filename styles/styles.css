@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+main, header {
+    max-width: 960px ;
+    background: #3aaeea;
+    margin: auto;
+    text-align: left;
+    
+}
+
+/* Catalog */
+@media screen and (min-width: 640px) {
+    .catalog-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .catalog-item {
+        width: 50%;
+    }
+}
