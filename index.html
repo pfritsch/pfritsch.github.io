@@ -2,50 +2,41 @@
 <html class="no-js" lang="">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="x-ua-compatible" content="ie=edge">
- <title>Conférences Test</title>
- <meta name="description" content="">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" type="text/css" href="styles/normalize.css">
- <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Conférences Test</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Mavo -->
+  <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
+  <script src="https://get.mavo.io/mavo.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Conférence</h1>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Conférence</h1>
+    </div>
+  </header>
 
-    <main>
-        <h2>Nos conférences à venir</h2>
-
-        <div class="catalog-list">
-            <article class="catalog-item">
-                <h3 class="catalog-title">Titre</h3>
-                <p class="catalog-summary">Résumé</p>
-                <a href="#">En savoir plus</a>
-            </article>
-
-            <article class="catalog-item">
-                <h3 class="catalog-title">Titre</h3>
-                <p class="catalog-summary">Résumé</p>
-                <a href="#">En savoir plus</a>
-            </article>
-
-            <article class="catalog-item">
-                <h3 class="catalog-title">Titre</h3>
-                <p class="catalog-summary">Résumé</p>
-                <a href="#">En savoir plus</a>
-            </article>
-
-            <article class="catalog-item">
-                <h3 class="catalog-title">Titre</h3>
-                <p class="catalog-summary">Résumé</p>
-                <a href="#">En savoir plus</a>
-            </article>
-        </div>
-    </main>
-
+  <main mv-app="webapptest" mv-storage="https://github.com/pfritsch/">
+    <div class="container">
+      <h2>Nos conférences à venir</h2>
+      <div class="catalog-list">
+          <article class="catalog-item" property="conference" mv-multiple>
+              <img src="img/aurelie.jpg" alt="Aurélie" property="image">
+              <h3 class="catalog-title" property="title">Titre</h3>
+              <time property="date" datetime="2017-12-18">18 décembre 2017</time>
+              <p class="catalog-summary" property="summary">Résumé</p>
+              <a href="#">En savoir plus</a>
+          </article>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

@@ -3,19 +3,30 @@ body{
 }
 main, header {
     max-width: 960px ;
-    background: #3aaeea;
     margin: auto;
     text-align: left;
-    
 }
-
+.container {
+  padding: 24px;
+}
 /* Catalog */
+.catalog-list {
+    margin: 0 -12px;
+}
+.catalog-item {
+  display: block;
+    margin: 0 12px 24px;
+    padding: 12px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
 @media screen and (min-width: 640px) {
     .catalog-list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .catalog-item {
-        width: 50%;
+        width: calc(50% - 48px);
     }
 }
