@@ -26,6 +26,7 @@
     </div>
   </header>
 
+
   <main mv-app="webapptest" mv-storage="https://github.com/pfritsch/" mv-plugins="locale-fr">
     <div class="container">
       <h2>Nos conférences à venir</h2>
@@ -35,7 +36,9 @@
               <h3 class="catalog-title" property="title">Titre</h3>
               <time property="date" datetime="2017-12-18">18 décembre 2017</time>
               <p class="catalog-summary" property="summary">Résumé</p>
-              <a href="#">En savoir plus</a>
+              <p>
+                <button id="likes" property="likes" mv-clicked>[likes]</span> J'aime</button>
+              </p>
           </article>
       </div>
     </div>
