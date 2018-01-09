@@ -2,23 +2,35 @@ body{
     text-align: center;
 }
 main, header {
-    max-width: 960px ;
+    max-width: 960px;
     margin: auto;
     text-align: left;
+}
+header {
+  /* background: url("../img/header-bg.jpg");
+  background-size: cover;
+  height: 300px; */
+}
+.header-img {
+  width: 100%;
 }
 .container {
   padding: 24px;
 }
 /* Catalog */
 .catalog-list {
-    margin: 0 -12px;
+  margin: 0 -12px;
 }
 .catalog-item {
   display: block;
-    margin: 0 12px 24px;
-    padding: 12px;
-    background: white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin: 0 12px 24px;
+  padding: 12px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.catalog-item img {
+  width: 100%;
 }
 @media screen and (min-width: 640px) {
     .catalog-list {
@@ -29,4 +41,7 @@ main, header {
     .catalog-item {
         width: calc(50% - 48px);
     }
+}
+h1 {
+  font-family: 'Sedgwick Ave Display', cursive;
 }
