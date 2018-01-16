@@ -26,6 +26,30 @@
     </div>
   </header>
 
+  <div mv-app="pictures-contest" mv-storage="local" mv-plugins="locale-fr" class="container">
+    [last(likes1)]
+    <article id="fight[$index]" class="fight">
+      <button property="likes1" data-article="fight[$index]" class="button" mv-clicked onclick="document.querySelector('#'+this.dataset.article).classList.toggle('already-voted');">[likes1]</span> J'aime </button>
+
+      <button property="likes2" data-article="fight[$index]" class="button" mv-clicked onclick="document.querySelector('#'+this.dataset.article).classList.toggle('already-voted');">[likes2]</span> J'aime pas </button>
+
+      <div class="result">
+        Score secret !!!
+      </div>
+    </article>
+  </div>
+
+  <div mv-app="anonymus" mv-storage="local" mv-autosave mv-plugins="locale-fr" class="container">
+    <h2>Messages anonymes</h2>
+    <p>Déjà [count(msg)] messages publiés</p>
+    <label for="msg">Laisser un message :</label>
+    <ul>
+      <li property="msg" mv-multiple mv-mode="edit">
+        <div property="text">Message</div>
+      </li>
+    </ul>
+
+  </div>
 
   <main mv-app="webapptest" mv-storage="https://github.com/pfritsch/" mv-plugins="locale-fr">
     <div class="container">
@@ -37,7 +61,7 @@
               <time property="date" datetime="2017-12-18">18 décembre 2017</time>
               <p class="catalog-summary" property="summary">Résumé</p>
               <p>
-                <button id="likes" property="likes" mv-clicked>[likes]</span> J'aime </button>
+                <button id="likes" property="likes" class="button" mv-clicked>[likes]</span> J'aime </button>
               </p>
           </article>
       </div>

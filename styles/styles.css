@@ -53,3 +53,10 @@ h1 {
   border-radius: 4px;
   font-size: 20px;
 }
+.result,
+.already-voted .button {
+  display: none;
+}
+.already-voted .result {
+  display: block;
+}
