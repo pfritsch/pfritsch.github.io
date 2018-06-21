@@ -7,16 +7,18 @@
 <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
 <script src="https://get.mavo.io/mavo.js"></script>
 
-<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="styles/normalize.css"/>
+<link rel="stylesheet" href="styles/styles.css"/>
 
 </head>
-<body mv-app="contacts" mv-storage="https://github.com/pfritsch/LigueNumerique" class="mv-autoedit" vocab="http://schema.org/">
+<body mv-app="contacts" mv-storage="https://github.com/pfritsch/LigueNumerique" mv-autosave="0" vocab="http://schema.org/">
+    <div class="mv-bar mv-ui">
+         <h1>Ligue Numérique</h1>
+    </div>
 
-<h1> Ligue Numérique</h1>
-
-<small>[count(member)] <span>Intervenants</span></small>
-<div class="member-list">
-    <div property="member" typeof="Team" mv-multiple open class="member-item">
+<small>[count(student)] <span>Élèves</span></small>
+<div class="student-list">
+    <div property="student" typeof="Team" mv-multiple open class="student-item">
         <section>
             <img property="picture" src="" class="portrait">
             <h1><span property="name" mv-default>Prénom Nom</span></h1>
@@ -38,7 +40,7 @@
     </div>
 </div>
 
-<small>[count(member)] <span>Élèves</span></small>
+<small>[count(member)] <span>Intervenants</span></small>
 <div class="member-list">
     <div property="member" typeof="Team" mv-multiple open class="member-item">
         <section>
@@ -56,8 +58,7 @@
             </article>
         </section>
         <section>
-            <p><span property="url" mv-attribute="none">Adresse de la page</span></p>
-            <a href="[url]" class="button">Voir la page</a>
+            <p><a href="[url]" property="url" mv-attribute="none">Adresse de la page</a></p>
         </section>
     </div>
 </div>

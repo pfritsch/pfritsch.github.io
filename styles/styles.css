@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 h1 {
-    font-size: 44px;
+    font-size: 24px;
 }
 .member-list {
     display: flex;
@@ -21,8 +21,8 @@ h1 {
     margin-bottom: 12px;
 }
 .portrait {
-    width: 240px;
-    height: 240px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
@@ -33,4 +33,11 @@ h1 {
     padding: 12px 24px;
     text-decoration: none;
     font-weight: bold;
+}
+.mv-bar {
+    background: rgba(0, 0, 0, 0.5);
+}
+.mv-bar h1 {
+    margin: 0;
+    font-size: 18px;
 }
