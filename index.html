@@ -7,8 +7,11 @@
 <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
 <script src="https://get.mavo.io/mavo.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,800" rel="stylesheet">
+
 <link rel="stylesheet" href="styles/normalize.css"/>
 <link rel="stylesheet" href="styles/styles.css"/>
+
 
 </head>
 <body mv-app="contacts" mv-storage="https://github.com/pfritsch/LigueNumerique" mv-autosave="0" vocab="http://schema.org/">
@@ -16,7 +19,15 @@
          <h1>Ligue Numérique</h1>
     </div>
 
-<small>[count(student)] <span>Élèves</span></small>
+<h1>Bienvenue dans la Ligue Numérique</h1>
+<p>Votre mission : compléter le site de la ligue.</p>
+<ol>
+    <li>Commencez par <strong>créer votre avatar</strong> de super héro (mercredi)</li>
+    <li>Puis vous devrez <strong>créer une page web</strong> pour présenter l'avatar (jeudi)</li>
+    <li>Enfin, vous devrez présenter votre héro sous forme de <strong>pitch</strong> (vendredi)</li>
+</ol>
+
+<small><span>Élèves</span> ([count(student)])</small>
 <div class="student-list">
     <div property="student" typeof="Team" mv-multiple open class="student-item">
         <section>
@@ -40,7 +51,7 @@
     </div>
 </div>
 
-<small>[count(member)] <span>Intervenants</span></small>
+<small><span>Equipe pédagogique</span> ([count(member)])</small>
 <div class="member-list">
     <div property="member" typeof="Team" mv-multiple open class="member-item">
         <section>
