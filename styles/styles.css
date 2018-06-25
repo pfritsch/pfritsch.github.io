@@ -35,7 +35,15 @@ h1 {
     text-decoration: none;
     font-weight: bold;
 }
-.mv-bar {
+.mv-bar.mv-ui {
+    position: fixed;
+    z-index: 1;
+    bottom: 4px;
+    top: auto;
+    left: 4px;
+    right: 4px;
+    margin-bottom: 0 !important;
+    padding: 0 8px;
     background: rgba(0, 0, 0, 0.5);
 }
 .mv-bar h1 {
