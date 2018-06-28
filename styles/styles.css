@@ -2,6 +2,7 @@ body {
     background: #e8e8e8;
     text-align: center;
     font-family: 'Barlow Semi Condensed', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 60px;
 }
 h1 {
     font-size: 30px;
@@ -12,6 +13,8 @@ h1 {
     padding: 12px;
 }
 .member-item {
+    flex: 1;
+    min-width: 240px;
     background: white;
     border-radius: 2px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.2);
