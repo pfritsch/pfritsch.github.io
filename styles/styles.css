@@ -8,6 +8,7 @@ h1 {
 }
 .member-list {
     display: flex;
+    flex-wrap: wrap;
     padding: 12px;
 }
 .member-item {
